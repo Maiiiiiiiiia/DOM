@@ -1,10 +1,8 @@
-// @ts-check
-/* eslint-disable no-console */
+// Реализуйте и экспортируйте по умолчанию асинхронную функцию, 
+// которая читает данные файла по указанному пути и выводит их в консоль.
 
-import fs from 'fs';
+//import fs from 'fs';
 
-// BEGIN (write your solution here)
 export default (data) => {
   fs.readFile(data, 'utf-8', (_error, data) => console.log(data));
 };
-// END
